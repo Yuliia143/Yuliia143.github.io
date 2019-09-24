@@ -1,0 +1,177 @@
+body {
+    background-color: #eaeaea;
+}
+
+.navigation {
+    background-color: white;
+}
+
+.trend-recipe {
+    background-image: url('../images/bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 80px;
+}
+
+.trend-recipe__card {
+    background: transparent;
+    width: 45%;
+    padding: 50px 80px;
+}
+
+.trend-recipe__card img {
+    width: 70%;
+}
+
+.new-recipes {
+    background-color: white;
+    margin-top: 80px;
+    padding: 40px 50px 60px;
+}
+
+.new-recipes svg {
+    width: 25px;
+    height: 25px;
+}
+
+.new-recipes span {
+    margin-right: 10px;
+}
+
+.sweet-recipe {
+    background-image: url('../images/bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+.sweet-recipe__card {
+    background: transparent;
+    margin-left: 50%;
+}
+
+.sweet-recipe__card svg {
+    width: 35px;
+    height: 35px;
+}
+
+.sweet-recipe__card span {
+    margin-right: 20px;
+}
+
+button.save {
+    position: absolute;
+    right: 8%;
+}
+
+.comment {
+    margin-top: 80px;
+    background-color: white;
+}
+
+.comment button {
+    width: 100%;
+}
+
+.post-form__row {
+    background-color: #f6f6f6;
+    margin: 0 10%;
+}
+
+.forms {
+    margin-top: 80px;
+}
+
+.form-1 {
+    background-color: white;
+}
+
+.form-1 svg {
+    width: 35px;
+    height: 35px;
+}
+
+.form-2 {
+    background-color: white;
+}
+
+.form-2 input {
+    margin-bottom: 10px;
+}
+
+.form-2 svg {
+    width: 35px;
+    height: 35px;
+}
+
+.footer {
+    margin-top: 80px;
+    height: 200px;
+    background-color: #2f2f2f;
+}
+
+@media (max-width: 425px) {
+    .get-recipe {
+        margin-bottom: 5%;
+    }
+
+    .trend-recipe__card img {
+        display: none;
+    }
+
+    .trend-recipe__card {
+        width: auto;
+        padding: 0;
+    }
+
+    .trend-recipe__body {
+        visibility: hidden;
+    }
+
+    .new-recipes {
+        padding: 0;
+    }
+
+    .sweet-recipe {
+        display: none;
+    }
+
+    .form-2 {
+        display: none;
+    }
+
+    .form-row {
+        margin: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .sweet-recipe {
+        display: none;
+    }
+
+    .form-2 {
+        display: none;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+    .trend-recipe__card {
+        padding: 30px 0;
+    }
+
+    .trend-recipe img {
+        width: 50%;
+    }
+
+    .sweet-recipe__card {
+        margin-left: 43%;
+    }
+}
