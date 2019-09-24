@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп "Бородинский"</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;" class="root-svg-symbols-element">
+    <symbol id="ico-log_in" viewBox="0 0 16 16">
+        <image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAAAdUlEQVQ4T82SMRKAMAgEz/gzH5YZf2XDx2zOQkOhwKX0ZmhysCEQkEQRxlrWUOsU/raQFDmpCACqAykF6MJHNUA8g+qFVxZ7UgJxgFrV0BtCkmzQqxpaw1N+W4uesGfeDCAqngZkxQ74/0803DdFAUAD1IqPC6Q9iPpWPno2AAAAAElFTkSuQmCC ">
+        </image>
+    </symbol>
+    <symbol id="ico-fast" viewBox="0 0 95 94">
+        <image width="95" height="94" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABeCAYAAABFEMhQAAAACXBIWXMAAAsSAAALEgHS3X78AAAMHklEQVR4Xt2d3XHbOBeGn2RSgDoIU8EqFSxTwZoVrHzD29gFcLIeFBDlVjdWKqC2gjAVRFtBmA70VeDvAqAEgQcESJG0nGcmkwg8jsgXBwcHf/Srp6cnrg2VZ0tgCSTAn6Y49dk7VObv78AB2Bebsim7Kl5dg/hG7BQtdAosuuwHUqErZFdsyn3AdhaeTXyVZwnwEbhBe/icHIAd8OU5K2J28VWerYC/iQ8jU1MDX4BtsSkPAdtRmUV8lWcLYIX29KTT+Jy9+fMLLVJtXavRHry0yhbm81v096TEc0BXwnquSphcfOPpn4mL4xXwLyN2kgP6k9kqYTLxVZ6lwCNhT9+hBd9N/bAAKs9ugL/QfU1XRRyA+2JTbjtsLmJ08U2IeUQ/nI8a+MoM3uXD3OcN8Am/g+yBD1Pd46jiG28v8XtUDTxM6U1DMPf9ifM+Yl1synvxB0ZiNPFVnn0G7jyXJ2/CY2Aq4TM6Bd16bJacWvW22JS1ZBfDxeKb5lvizyzWaG+fpOnOicqzO3TlANTFpnzXZR/iTcigC+MFj5ynew01cDtW1vKcGAf7jE6XGx5k63gGe74R/htyfN+iw8zv4O2Sg13s9TDQ8wPC3157bI/FpKWPtJ/zVjDvTW/xO4Q/oNOyffunXh4qz/5BZ0Au1VihtJf4HcLXQPY7CB8xTmnFetMR18Wm3An2XqJjvrmpb7Q71z0TDkTmJJBAgPb6D3aB0eWn+dir5b8OGViUtG+q5vcRPkV2Lhspw7lDR4IF8M1URhRR4psBVOoUH9Ch5ncQfoU/gWjYurHeCP3RKlqgnTSKoPimx78TLvVqYteKyrNHdKgJEZvXp6azDtIZ86145nrEi08nIzpWG+88j+knfgiX3oecM+T5Uo67/U2E/0ac8Ac6vN4ILFVMsDV5xTcdkHtzNfIXvRisdLmrY7X5EurXik25Rq9L2CxD4afL86Wauw3dyDUzQPi62JT/hIwMt+hWYvNR6Y0CIqL4ZtCQOMXrsUZ2z0FgSsRHdCs3TunaL5BHyYAgvomH7g90xr1rx2RsfYWv+o5YTV9YOcUrn/dLnn9H+yZf7AylyeG7Vtd8DJ08k1qL6P2S+PagAXTc2wp2V48RPph1CDwUA1eoTPazdYpF7z8T39ys6yEvMtxcIHyNXn27BFuzCl0ZiWt0NshSefaDCRYN5mZg59qQ9Y31EirPFqFQffR8ddoZbPOVF8aFwu/GEB6O2U8ndtj5W7h+afObFRNXhwovpYqTYi+m3DjXLt5BZrywEeIQmuu4BHXaRTFEeLigk+2DcZAEWL4xBUvaHcK/9ECdNsP+iWdPpMoz0B1aBXwfOYvqWgQJUZkpgtEweizRWrylvXF33Xi+XdgQFftMTX7ifFtFFwnadqX0OsHFm1LNiNxtubEcGJ7TA2f9ZYJ2PrvFS2yLTXn/6unpCZVn3zivgF2xKTPPDx5R/kXmvtQMXANW/indWO5jvT7Cm2PYFpvyFk4xP3UMvhNA6UWIVcgukgS9BDdkgWZILt+wk4S3+qqUk8ghb47hwZ6oe2O+yKVTABMuVl02A1igK+B9bMdnWt7QOH8WbpR/4WgMDugZ4bNQ/gbh5rtmL5We57/zXed03uk/zitxCfyB9qak9VOaBdqTz3YISKj2+mlf3PXnFdMIX6GFr90Lb2gLUblGDr4HPqCblS9+Vs0/lB76f0KuhFTlWdrlAIbY0y4SD8L/f0lFSoT04DWnc64NtWBncyOUHdAL6t4vsjEp5nv84U0a8B0xGdaqy6aDqnAWSJS8fnEJa+CdTw9z/+Ks5i+hDDiGHIn7vh2lafK+jGrlKW8YmmG1vtNKlcdgixbdOwVvWv0P0OKnzvUaP6lUOHSwZOKgWGm+ilan4zxDkDZ4PTI8fMFpoeldsSnF2A76vlWelZjvU3mWSHs1a6Gsi14eLyB6SAd3DBPr1m2dJl1OZfMge/CfYBFwMylR/L4sQwZjcUGGs3ZFMs1/JRl3UHM6uV53m7ZoOcwY4qPybNk35sMx3qYBM5shXr8tnA1Pqt9CS40W/OuQZ+yir/i1p/yGnuFHnWYhfdT2B8fr95ymf5v3N0jYdkC08DUTCW7TV/zKU/5J5dlb4F93FCcRyPNBr6DVTlnj9QfOO85KteemQNi6HhB+j148qqYU3KaX+MWmrFWebZFj5Qo9Uwm6kvbA/xybZoQbCh1nFeh6vZCxfOdcfLeCmqkIN6XccXoNTM3M9BLfcE/46HxKv1ju8sX5/InT9yW0eWv9WxLengTcMePrBrroLX6xKQ8qzz4wfLkuxNr2QqUn/u6s64kR897cyx0nYRvhj2HD2C7Qk2jPLriNJH4ilJ1RbMq9yrP36PiZBsz7cKC9VUWK0StOIa5BEn7BTMuDXSh55vjwBh2fU6swEQxbmAf6oPRWvI+MUwlnG3GNV0s37rJHGESZ/+saPL0VIYpNuZfmduz4GaTYlLtCHxJ7h+4PKoY98NrOlFT8nMue6z8l4zrQAXTYcTOFhAGYlrA2fxrxEnN5yXnt15zyeCmthLgp44qXcS7Mdeg9aPFr50LKCBhBa/Ox8hoKKPlghstxLfQF4Hr+HvSsZqu5Kv/U8VyERqCgT36EWsa1kDqffwG89sTKmE5uEsxgKAmYgb7Hz1w5Hkeu4LSYUjkX3dWtWVCnd23GslJ59uPKW0DqfD7u3GvEd3en3TzTA9kj2ViWwA9PLn0N/OV8rpp/+Dwfwh3eqKjL1mUT9LaTq6oA80zuPR0d/TUcT1PUjpFbY1MTk9N3sUBXQBIynBHJgavmH/Yga+cYzRZ6Ir2+Rt94hX8QtyAuU5oLt/+q7DGNLf5X2twJZVPQ1cke0FMH74pN+cEaTbtzQA3pNXi/yXISp/hM46P4JvS4aWfn/pkRWXnK9+hdAVu7sNiUh0LvvfENslJP+Zy4DnXAiS7u3I47j54ovfozGWZiTgpvBwLv8jGVshUuJULZbJiW58b71nT2mfjmYWrOubQjDOHr2G+7hLeQNnk9yzjFQtKsFSalWU039k/t/alQti8i1oKvEZPurpzirTR5KIm/pp1NfJ4i83FmPm3c8NfFHyGDmZGmPMTnaYlvmrrbRBZME34ST3kfr18KZW7iMAum/0qd4q1vrUHyfAq9u7Z2iu8mmO1MhbI6MtY3TTwRLkn9wKSo05urXHwpsSy+QUrjHqcIPw51yMDClwpXnvIpaRbqbTrXj73iF/rwgNv8E65kGledjp661HMvKZqExE0t6yLwoqQuzwf57UmribOfWCRPg5lfWWBCn+SQwdOcneIX/gMMjyPNIEoemghlZ3g8DbSjrIXySVD+U+8PMa0v5PlN+JEeaIwpXFF8pTc6iaju/ZYPsZ31pajTGwoT51IVCjcNfd6lLG1GPaDnXgY/sMqzn8jevkeLuTN2Cd0n3avCec/xVFjCu87XS4+g51tktD11Qc/3Bwv4YvQSKFWePak8e0Kf7Fh5bH3hcXSslFISvnMuyiVafPOfSh3wEvh5QQhaM2yTVUPvhx6K5fE3wuXWjrkQ0eLDcdr5A22xmhbQuwI8I+pYGuF7PfQQOkINCKfLY+glPgQr4MeQNNSMqLchO4c9Or7OIfwSHfZ8wm+F8iC9xYfOCgCdhg4ZCfeZElgXm/L9TKHmDn1uVnqewcLDQPHhrAIkz1uhW0EqXPMRMwdfod/OPfnruFSeJSbDkwZQTbjbCteiiU41fVgDjdRjsiYi/+5IOYF5f62f8XbfHqKage8GcrlY/AbV/eKjA4GXQJh00mWLPhFYCddGR4V/k+mO+BW2IKOJD8ebl4bbDTUeDxbEn3PQlNL+xZQ2QecZwuCYL2E89B3+zCVBd8ip5/psKP0uhJXSL3KVRu8NFbqfGVV4GHAgLkQzGFN59hXdWUnpWQx9s6Uo1O/8y4hdlHzgufVSOdV+lTDoPL7mAkyOnnKFv4Z7dM93MZ6zdSrhrWC6py3+CvjHLlCnN/zVaKHsn2muvUV/T0o8s4neMLn4DU4lJILJV9oTZ3/jiI8W9xvjUaNF384lesPkYacPSpi2LjblK8cm5XLxD5xe3bIPGU/FbJ4fScb55NWYnlhxes/Cswluc1Xim2b/3nh3ipyyhrKnyvz9HV15+7kGaX35Py3yYCsfSyclAAAAAElFTkSuQmCC">
+        </image>
+    </symbol>
+    <symbol id="ico-cool" viewBox="0 0 95 88">
+        <image width="95" height="88" xlink:href="data:image/png;base64,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">
+        </image>
+    </symbol>
+    <symbol id="ico-price" viewBox="0 0 95 91">
+        <image width="95" height="91" xlink:href="data:image/png;base64,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">
+        </image>
+    </symbol>
+    <symbol id="ico-vk" viewBox="0 0 511.998 511.998">
+        <g>
+            <path d="M489.25,335.681c-11.137-13.347-23.719-25.264-35.888-36.789c-4.276-4.051-8.7-8.24-12.96-12.399
+			c-0.001-0.001-0.002-0.002-0.003-0.003c-5.73-5.589-8.535-9.556-8.828-12.486c-0.288-2.88,1.68-7.153,6.207-13.469
+			c6.769-9.5,13.984-19.016,20.964-28.218c6.204-8.18,12.618-16.639,18.766-25.146l1.38-1.91
+			c11.995-16.602,24.397-33.769,31.043-54.689c1.898-5.998,3.869-14.874-0.885-22.666c-4.756-7.794-13.573-10.104-19.787-11.162
+			c-3.035-0.52-5.915-0.563-8.595-0.563l-77.806-0.069c-13.452-0.224-22.784,6.152-27.87,18.956
+			c-4.07,10.226-8.877,22.077-14.446,33.319c-10.655,21.703-24.194,46.7-43.818,67.527l-0.872,0.928
+			c-1.336,1.426-3.519,3.758-4.64,4.293c-2.126-1.336-4.579-8.977-4.467-12.98c0.003-0.099,0.004-0.197,0.004-0.295l-0.069-89.903
+			c0-0.457-0.032-0.914-0.093-1.367c-1.745-12.826-5.147-25.684-25.447-29.69c-0.651-0.129-1.313-0.193-1.975-0.193h-80.935
+			c-15.227,0-23.281,6.973-29.738,14.533c-1.869,2.204-6.835,8.056-4.305,15.21c2.56,7.239,10.188,8.684,12.692,9.158
+			c8.82,1.674,13.381,6.659,14.793,16.189c2.791,18.517,3.133,38.326,1.078,62.309c-0.573,6.439-1.639,11.333-3.359,15.403
+			c-0.476,1.127-0.894,1.825-1.186,2.236c-0.466-0.188-1.191-0.548-2.195-1.235c-6.198-4.241-10.869-10.834-15.386-17.208
+			c-18.042-25.473-33.218-53.607-46.401-86.022c-5.429-13.283-15.635-20.702-28.719-20.894c-24.928-0.415-47.983-0.405-70.459,0.032
+			c-10.601,0.184-18.035,3.521-22.099,9.92c-4.069,6.411-3.92,14.585,0.444,24.299c31.196,69.37,59.522,119.834,91.842,163.628
+			c22.757,30.832,45.665,52.234,72.092,67.354c27.766,15.885,59.08,23.67,95.408,23.669c4.131,0,8.334-0.101,12.593-0.304
+			c22.413-1.021,31.532-9.936,32.527-31.765c0.558-11.537,1.842-20.883,6.297-29.003c1.246-2.273,2.652-3.797,3.76-4.076
+			c1.178-0.294,3.267,0.427,5.59,1.936c4.247,2.758,7.904,6.498,10.911,9.781c3.048,3.337,6.128,6.784,9.109,10.117
+			c6.343,7.097,12.902,14.436,19.774,21.436c15.543,15.844,33.461,23.11,53.278,21.588l71.205,0.033c0.002,0,0.003,0,0.004,0
+			c0.226,0,0.452-0.007,0.678-0.022c8.213-0.547,15.314-5.094,19.484-12.478c5.021-8.892,4.945-20.155-0.207-30.14
+			C502.359,352.01,495.384,343.075,489.25,335.681z M490.181,382.502c-0.982,1.739-2.193,2.056-2.818,2.132l-71.19-0.033
+			c-0.002,0-0.004,0-0.007,0c-0.281,0-0.562,0.011-0.841,0.035c-14.025,1.168-25.946-3.762-37.474-15.512
+			c-6.539-6.662-12.937-13.819-19.124-20.741c-3.015-3.373-6.132-6.862-9.264-10.29c-3.884-4.242-8.685-9.117-14.854-13.123
+			c-9.236-5.995-16.89-5.814-21.683-4.606c-4.743,1.195-11.485,4.605-16.66,14.049c-6.704,12.219-8.183,25.401-8.785,37.854
+			c-0.348,7.616-1.636,9.628-2.174,10.139c-0.705,0.67-3.061,1.848-10.922,2.207c-37.776,1.776-69.478-4.989-96.931-20.696
+			c-23.882-13.664-44.794-33.291-65.809-61.762c-31.425-42.579-59.075-91.887-89.65-159.877c-1.108-2.463-1.45-4-1.549-4.823
+			c0.78-0.256,2.304-0.593,4.976-0.642c22.248-0.431,45.062-0.443,69.765-0.031c3.382,0.05,7.233,1.065,10.149,8.2
+			c13.774,33.869,29.685,63.344,48.645,90.112c5.034,7.105,11.3,15.949,20.509,22.25c8.435,5.776,15.28,5.5,19.538,4.252
+			c4.26-1.249,10.172-4.719,14.154-14.147c2.569-6.077,4.122-12.92,4.891-21.566c2.197-25.653,1.807-46.981-1.225-67.098
+			c-2.137-14.413-9.579-24.825-21.302-30.142c2.082-1.084,4.428-1.536,7.686-1.536h79.877c4.494,1.008,5.384,2.192,5.689,2.597
+			c1.294,1.721,2.034,5.792,2.486,8.973l0.068,89.074c-0.18,8.539,3.97,27.477,18.1,32.67c0.116,0.043,0.233,0.083,0.35,0.121
+			c12.864,4.204,21.373-4.877,25.941-9.756l0.814-0.866c21.496-22.815,35.971-49.473,47.28-72.508
+			c5.894-11.895,10.886-24.199,15.107-34.805c2.112-5.319,4.034-6.195,8.62-6.098c0.063,0.002,0.125,0.002,0.189,0.002l77.905,0.069
+			c1.812,0,3.703,0.021,5.17,0.272c3.712,0.632,5.241,1.402,5.745,1.721c0.052,0.591,0.04,2.291-1.082,5.839
+			c-5.651,17.789-16.572,32.903-28.133,48.905l-1.381,1.913c-6.007,8.312-12.35,16.675-18.483,24.764
+			c-7.07,9.321-14.378,18.958-21.307,28.684c-14.814,20.669-13.512,34.385,4.975,52.417c4.369,4.265,8.847,8.507,13.179,12.609
+			c12.281,11.633,23.882,22.62,34.235,35.026c5.42,6.534,11.564,14.381,16.042,23.029
+			C491.954,376.286,491.381,380.376,490.181,382.502z"></path>
+        </g>
+        <g>
+            <g>
+                <path d="M74.382,169.635c-1.498-2.964-2.983-5.936-4.454-8.914c-2.496-5.049-8.608-7.123-13.661-4.627
+			c-5.05,2.495-7.122,8.611-4.627,13.661c1.499,3.034,3.012,6.062,4.537,9.081c1.795,3.552,5.386,5.6,9.11,5.6
+			c1.546,0,3.117-0.353,4.592-1.098C74.908,180.796,76.923,174.662,74.382,169.635z"></path>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M138.353,275.441c-16.724-22.659-32.37-47.27-47.83-75.239c-2.725-4.93-8.931-6.716-13.86-3.992
+			c-4.929,2.725-6.717,8.931-3.992,13.86c15.896,28.756,32.013,54.102,49.271,77.485c2,2.71,5.087,4.143,8.214,4.143
+			c2.104,0,4.226-0.648,6.048-1.995C140.735,286.359,141.697,279.974,138.353,275.441z"></path>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="ico-fb" viewBox="0 0 512 512">
+        <g>
+            <g>
+                <path d="M325.581,111.282h46.654c9.995,0,18.128-8.132,18.128-18.128V18.187c0-9.996-8.132-18.128-18.128-18.128H308.17
+			C307.556,0.033,306.489,0,304.994,0c-12.088,0-54.123,2.385-87.472,33.064c-36.401,33.493-32.918,73.557-31.386,83.435v48.84
+			h-46.371c-9.995,0-18.128,8.132-18.128,18.128v80.629c0,9.997,8.132,18.13,18.128,18.13h43.688v211.647
+			c0,9.995,8.132,18.128,18.128,18.128h91.368c9.995,0,18.128-8.133,18.128-18.128V283.271h51.749
+			c9.214,0,16.956-6.903,18.009-16.056l9.409-81.672c0.591-5.131-1.04-10.285-4.477-14.14c-3.437-3.853-8.368-6.063-13.53-6.063
+			h-61.156v-40.997C311.079,115.872,313.39,111.282,325.581,111.282z M300.881,185.739h68.807l-8.886,77.134h-59.924
+			c-5.632,0-10.199,4.566-10.199,10.199v218.53H203.85V272.026c0-5.633-4.567-10.199-10.199-10.199h-51.617v-76.09h54.301
+			c5.632,0,10.199-4.566,10.199-10.199V115.67c0-0.585-0.05-1.17-0.15-1.747c-1.075-6.175-4.918-38.365,24.95-65.847
+			c27.915-25.681,63.439-27.677,73.661-27.677c1.433,0,2.286,0.038,2.442,0.046c0.168,0.008,0.336,0.012,0.504,0.012h62.026v70.428
+			h-44.385c-21.854,0-34.901,12.508-34.901,33.458v51.196C290.681,181.173,295.249,185.739,300.881,185.739z"></path>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M224.382,343.713c-5.632,0-10.199,4.566-10.199,10.199v5.1c0,5.633,4.567,10.199,10.199,10.199
+			c5.632,0,10.199-4.566,10.199-10.199v-5.1C234.581,348.279,230.013,343.713,224.382,343.713z"></path>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M224.382,381.45c-5.632,0-10.199,4.566-10.199,10.199v77.514c0,5.633,4.567,10.199,10.199,10.199
+			c5.632,0,10.199-4.566,10.199-10.199v-77.514C234.581,386.016,230.013,381.45,224.382,381.45z"></path>
+            </g>
+        </g>
+    </symbol>
+    <symbol id="ico-inst" viewBox="0 0 512 512">
+        <g>
+            <g>
+                <g>
+                    <path d="M359.312,0H152.689C68.849,0,0.64,68.208,0.64,152.049v207.903C0.64,443.792,68.849,512,152.689,512h206.623
+				c83.839,0,152.048-68.208,152.048-152.048V152.049C511.359,68.208,443.151,0,359.312,0z M490.961,359.951
+				c0,72.593-59.057,131.65-131.649,131.65H152.689c-72.593,0-131.65-59.057-131.65-131.649V152.049
+				c0-72.593,59.057-131.65,131.65-131.65h206.623c72.592,0,131.649,59.057,131.649,131.65V359.951z"></path>
+                    <path d="M359.312,58.294H152.689c-51.698,0-93.756,42.057-93.756,93.755v207.904c0,51.697,42.058,93.755,93.756,93.755h206.623
+				c51.697,0,93.755-42.058,93.755-93.755V152.049C453.067,100.352,411.009,58.294,359.312,58.294z M432.669,359.951
+				c0,40.449-32.908,73.357-73.357,73.357H152.689c-40.45,0-73.358-32.908-73.358-73.357V152.048
+				c0-40.449,32.908-73.357,73.358-73.357v0.001h206.623c40.449,0,73.357,32.908,73.357,73.357V359.951z"></path>
+                </g>
+            </g>
+        </g>
+        <g>
+            <g>
+                <g>
+                    <path d="M256,124.178c-72.686,0-131.821,59.135-131.821,131.822S183.313,387.821,256,387.821S387.821,328.687,387.821,256
+				S328.686,124.178,256,124.178z M256,367.422c-61.438,0-111.422-49.984-111.422-111.422c0-61.439,49.984-111.423,111.422-111.423
+				c61.439,0,111.422,49.984,111.422,111.423C367.422,317.438,317.438,367.422,256,367.422z"></path>
+                    <path d="M256,181.041c-41.332,0-74.959,33.627-74.959,74.959s33.627,74.959,74.959,74.959c41.333,0,74.959-33.627,74.959-74.959
+				S297.332,181.041,256,181.041z M256,310.561c-30.085,0-54.561-24.476-54.561-54.561s24.476-54.561,54.561-54.561
+				s54.561,24.475,54.561,54.561C310.561,286.085,286.085,310.561,256,310.561z"></path>
+                </g>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M380.485,99.843c-17.464,0-31.673,14.208-31.673,31.673s14.208,31.672,31.673,31.672
+			c17.463,0,31.672-14.207,31.672-31.672S397.948,99.843,380.485,99.843z M380.485,142.789c-6.216,0-11.274-5.057-11.274-11.273
+			c0-6.217,5.058-11.274,11.274-11.274s11.273,5.058,11.273,11.274C391.759,137.732,386.702,142.789,380.485,142.789z"></path>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M239.681,463.044h-95.872c-5.633,0-10.199,4.566-10.199,10.199s4.566,10.199,10.199,10.199h95.872
+			c5.633,0,10.199-4.566,10.199-10.199S245.314,463.044,239.681,463.044z"></path>
+            </g>
+        </g>
+        <g>
+            <g>
+                <path d="M278.438,463.044h-6.12c-5.632,0-10.199,4.566-10.199,10.199s4.567,10.199,10.199,10.199h6.12
+			c5.633,0,10.199-4.566,10.199-10.199S284.07,463.044,278.438,463.044z"></path>
+            </g>
+        </g>
+    </symbol>
+</svg>
+<header class="header">
+    <a class="header__logo">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="images/logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.png">
+            <img class="header__logo-img" src="images/logo-mobile.png" width="226" height="30" alt="Барбершоп <<Бородинский>>">
+        </picture>
+    </a>
+    <nav class="navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span></button>
+        <div class="navigation__wrapper">
+            <ul class="navigation__list site-list">
+                <li class="site-list__item site-list__item--active">
+                    <a class="site-list__link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="works.html">Наши работы</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Записаться</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+            <ul class="navigation__list user-list">
+                <li class="user-list__item">
+                    <a class="user-list__login" href="#">
+                        <svg class="user-list__svg" width="16" height="16">
+                            <use xlink:href="#ico-log_in"></use>
+                        </svg>
+                        Вход</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
+    <section class="statistic">
+        <header class="statistic__header">
+            <h2 class="visually-hidden">Статистика Барбершопа</h2>
+            <b class="statistic__slogan">
+                Стрижка у нас это вигодно!
+            </b>
+            <p class="statistic__introduction">
+                Мужская стрижка требует точного подхода. Обратимся к статистике:
+            </p>
+            <small class="statistic__legend statistic__legend--top">
+                <sup>*</sup> - приведённые даные ложь
+            </small>
+        </header>
+        <table class="statistic__list">
+            <tr>
+                <td class="statistic__value">
+                    1 500<sup>*</sup>
+                </td>
+                <td class="statistic__field">
+                    рублей вложений
+                </td>
+            </tr>
+            <tr>
+                <td class="statistic__value">
+                    7 200
+                </td>
+                <td class="statistic__field">
+                    секунд времени мастера
+                </td>
+            </tr>
+            <tr>
+                <td class="statistic__value">
+                    90 000
+                </td>
+                <td class="statistic__field">
+                    постриженных волос
+                </td>
+            </tr>
+            <tr>
+                <td class="statistic__value">
+                    500 000<sup>*</sup>
+                </td>
+                <td class="statistic__field">
+                    лайков и комплиментов
+                </td>
+            </tr>
+        </table>
+        <small class="statistic__legend statistic__legend--bottom">
+            <sup>*</sup> - приведённые даные ложь
+        </small>
+    </section>
+    <section class="advantages">
+        <div class="advantages__wrapper slider">
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <ul class="advantages__list slider__list">
+                <li class="advantages__item advantages__item--fast slider__item fade">
+                    <svg class="advantages__svg" width="95" height="94">
+                        <use xlink:href="#ico-fast"></use>
+                    </svg>
+                    <h3 class="advantages__title">Быстро</h3>
+                    <p class="advantages__description">
+                        Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной
+                        стрижки-минутки!
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--cool slider__item fade">
+                    <svg class="advantages__svg" width="95" height="88">
+                        <use xlink:href="#ico-cool"></use>
+                    </svg>
+                    <h3 class="advantages__title">Круто</h3>
+                    <p class="advantages__description">
+                        Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае
+                        внешне.
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item--price slider__item fade">
+                    <svg class="advantages__svg" width="95" height="91">
+                        <use xlink:href="#ico-price"></use>
+                    </svg>
+                    <h3 class="advantages__title">Дорого</h3>
+                    <p class="advantages__description">
+                        Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает
+                        определеный статус?
+                    </p>
+                </li>
+            </ul>
+            <p class="advantages__toggles slider__toggles">
+                <button class="slider__toggle" type="button" onclick="currentSlide(1)"></button>
+                <button class="slider__toggle" type="button" onclick="currentSlide(2)"></button>
+                <button class="slider__toggle" type="button" onclick="currentSlide(3)"></button>
+            </p>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news__wrapper">
+            <h2 class="news__title">Новости и акции</h2>
+            <ul class="news__list">
+                <li class="news__item">
+                    <time class="news__date" datetime="2017-09-29">
+                        <b class="news__day">29</b> cент
+                    </time>
+                    <p class="news__text">
+                        Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.
+                    </p>
+                </li>
+                <li class="news__item">
+                    <time class="news__date" datetime="2017-09-19">
+                        <b class="news__day">19</b> cент
+                    </time>
+                    <p class="news__text">
+                        В нашей команде пополнение, Борис "Бритва" Стригунец, пополнил наши стройные ряды. Спешите
+                        записаться!
+                    </p>
+                </li>
+                <li class="news__item">
+                    <time class="news__date" datetime="2017-09-09">
+                        <b class="news__day">9</b> cент
+                    </time>
+                    <p class="news__text">
+                        Все дорожает, а наши стрижки нет!Как так?Приходите, постригитесь и узнаете, в чем здесь подвох!
+                    </p>
+                </li>
+            </ul>
+            <a class="news__to-all button" href="#">Показать все</a>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__wrapper reviews__slider">
+            <div class="reviews__head">
+                <h2 class="reviews__title">Отзывы о нас</h2>
+                <a class="reviews__write button" href="#">Оставить свой</a>
+            </div>
+            <div class="reviews__list reviews__slider__list">
+                <blockquote class="reviews__item reviews__slider__item">
+                    <div class="reviews__author-picture">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/picture-travis.jpg">
+                            <source media="(min-width: 768px)" srcset="images/picture-travis-tablet.jpg">
+                            <img class="reviews__author-image" src="images/picture-travis-mobile.jpg" alt="Фото Трэвиса Баркера">
+                        </picture>
+
+                    </div>
+                    <div class="reviews__content">
+                        <cite class="reviews__author-name">Трэвис Баркер</cite>
+                        <p class="reviews__text">
+                            Спасибо за лысину!Был проездом в Москве, заскочил побриться, чтобы было видно новую
+                            татуировку!
+                        </p>
+                    </div>
+                </blockquote>
+                <blockquote class="reviews__item reviews__slider__item">
+                    <div class="reviews__author-picture">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/picture-travis.jpg">
+                            <source media="(min-width: 768px)" srcset="images/picture-travis-tablet.jpg">
+                            <img class="reviews__author-image" src="images/picture-travis-mobile.jpg" alt="Фото Джона Смита">
+                        </picture>
+                    </div>
+                    <div class="reviews__content">
+                        <cite class="reviews__author-name">Джон Смит</cite>
+                        <p class="reviews__text">
+                            Отличную стрижку мне сделали ребята.
+                        </p>
+                    </div>
+                </blockquote>
+                <blockquote class="reviews__item reviews__slider__item">
+                    <div class="reviews__author-picture">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/picture-travis.jpg">
+                            <source media="(min-width: 768px)" srcset="images/picture-travis-tablet.jpg">
+                            <img class="reviews__author-image" src="images/picture-travis-mobile.jpg" alt="Фото Ивана Бородайло">
+                        </picture>
+                    </div>
+                    <div class="reviews__content">
+                        <cite class="reviews__author-name">Иван Бородайло</cite>
+                        <p class="reviews__text">
+                            В Бородинском Ваша борода в надёжных руках!
+                        </p>
+                    </div>
+                </blockquote>
+                <button class="reviews__prev" type="button" onclick="plusReviewsSlides(-1)">
+                    <svg version="1.1" id="left-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;width: 15px;height: 15px;" xml:space="preserve">
+                            <g>
+                                <path d="M474.459,0v490L15.541,244.991L474.459,0z"></path>
+                            </g>
+                        </svg>
+                </button>
+                <button class="reviews__next" type="button" onclick="plusReviewsSlides(1)">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;width: 15px;height: 15px;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M15.541,490V0l458.917,245.009L15.541,490z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <p class="reviews__toggles reviews__slider__toggles">
+                <button class="reviews__slider__toggle" type="button" onclick="currentReviewsSlide(1)"></button>
+                <button class="reviews__slider__toggle" type="button" onclick="currentReviewsSlide(2)"></button>
+                <button class="reviews__slider__toggle" type="button" onclick="currentReviewsSlide(3)"></button>
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer-contacts contacts">
+                <b class="contacts__title">Барбершоп Бородинский</b>
+                <p class="contacts__address">
+                    г.Санкт-Петербург, ул.Большая Конюшенная 19/8
+                    <a class="contacts__phone" href="tel:+78125556666">
+                        <span class="contacts__phone-mobile">Тел.:</span>
+                        +7(812)555-66-66
+                    </a>
+                </p>
+            </div>
+            <div class="footer__social social" id="contacts">
+                <b class="social__title">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="https://www.vk.com/">
+                            <svg width="50" height="50">
+                                <use xlink:href="#ico-vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--fb" href="https://www.facebook.com/">
+                            <svg width="50" height="50">
+                                <use xlink:href="#ico-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--inst" href="https://www.instagram.com/">
+                            <svg width="50" height="50">
+                                <use xlink:href="#ico-inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</main>
+<div class="modal__log-in">
+    <div class="modal__log-in__wrapper">
+        <button class="modal__log-in--close" type="button" title="Закрыть">Закрыть</button>
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль, чтобы войти:</p>
+        <form class="login-form" action="#" method="post">
+            <input class="ico-user" type="text" name="login" placeholder="Логин">
+            <input class="ico-password" type="password" name="password" id="user-field-id" placeholder="Пароль">
+
+            <div class="restore">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" id="remember-field">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня</label>
+                <a href="#">Я забыл пароль!</a>
+            </div>
+            <div class="modal__options">
+                <button class="btn-login" type="submit">Войти</button>
+                <button class="btn-close" type="button">Закрыть</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal__overlay"></div>
+<script src="js/menu.js"></script>
+<script src="js/advantages__slider-mobile.js"></script>
+<script src="js/reviews__slider.js"></script>
+<script src="js/modal__log-in.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/anchor-links.js"></script>
+</body>
+</html>
