@@ -364,7 +364,7 @@ img {
     height: 400px;
     width: 100%;
     background-color: #000000;
-    background-image: url('../../images/bg-header.jpg');
+    background-image: url('../images/bg-header.jpg');
     background-repeat: no-repeat;
     background-position: center -84px;
   }
@@ -376,14 +376,14 @@ img {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .header__logo {
-    background-image: url("../../images/bg-header@2x.jpg");
+    background-image: url("../images/bg-header@2x.jpg");
     background-size: 1338px auto;
   }
 }
 @media (min-width: 1200px) {
   .header__logo {
     height: 648px;
-    background-image: url('../../images/bg-header-desktop.jpg');
+    background-image: url('../images/bg-header-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -481,10 +481,8 @@ img {
     left: 70px;
     z-index: 10;
     min-height: 80vh;
-    /*???*/
     background-color: #6a4d38;
   }
-  /*shadow*/
   .navigation--opened .navigation__wrapper::before {
     content: "";
     position: absolute;
@@ -874,7 +872,6 @@ img {
   .statistic__list {
     width: 640px;
     display: flex;
-    /*щоб по висоті як statistic__header*/
     flex-grow: 1;
   }
 }
@@ -1491,7 +1488,7 @@ img {
   top: 135px;
   z-index: 20;
   color: black;
-  background: #f8f3f0 url("../../image/bg-modal__log-in.png");
+  background: #f8f3f0 url("../images/bg-modal__log-in.png");
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 .modal__log-in__wrapper {
