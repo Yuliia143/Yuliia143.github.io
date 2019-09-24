@@ -1,0 +1,118 @@
+.header {
+    height: 700px;
+    background-image: linear-gradient(to top, rgba(62, 68, 73, 0.8), rgba(62, 68, 73, 0.8)),
+    url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.header__title {
+    max-width: 615px;
+}
+
+.services svg {
+    width: 60px;
+    height: 60px;
+}
+
+.subscribe {
+    height: 250px;
+    background-image: linear-gradient(to top, rgba(62, 68, 73, 0.8), rgba(62, 68, 73, 0.8)),
+    url("../images/background-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.subscribe__form {
+    width: 70%;
+}
+
+.subscribe__form button {
+    width: 100%;
+}
+
+.work__title {
+    max-width: 500px;
+}
+
+.reviews {
+    background-image: linear-gradient(to top, rgba(62, 68, 73, 0.8), rgba(62, 68, 73, 0.8)),
+    url("../images/background-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.reviews__slider__list {
+    position: relative;
+}
+
+.reviews__prev, .reviews__next {
+    background: transparent;
+    border: 0;
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.reviews__next {
+    right: 0;
+}
+
+.reviews__prev {
+    left: 0;
+}
+
+.contacts svg {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    background-image: linear-gradient(to top, rgba(62, 68, 73, 0.8), rgba(62, 68, 73, 0.8)),
+    url("../images/background-4.png.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.footer__title {
+    max-width: 500px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.contacts__form {
+    width: 70%;
+}
+
+.form__contacts svg {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.footer button {
+    width: 100%;
+}
+
+svg:hover {
+    transform: scale(1.5);
+}
+
+.services svg {
+    transition: all 0.5s ease;
+}
+
+.services svg:hover {
+    transform: rotate(360deg);
+}
